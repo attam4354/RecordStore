@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Custom Styles */
+    .nav-pills .nav-link {
+      transition: all 0.3s ease;
+    }
+
+    .nav-pills .nav-link:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .tab-content {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .card {
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <title>Tabs with Cards</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <nav class="nav justify-content-center nav-pills">
+      <a class="nav-link active" data-bs-toggle="tab" href="#a">Movie 1</a>
+      <a class="nav-link" data-bs-toggle="tab" href="#b">Movie 2</a>
+      <a class="nav-link" data-bs-toggle="tab" href="#c">Movie 3</a>
+      <a class="nav-link" data-bs-toggle="tab" href="#d">Movie 4</a>
+    </nav>
+
+    <div class="tab-content mt-4">
+      <div class="tab-pane active" id="a">
+        <div class="card">
+          <img src="https://via.placeholder.com/400" class="card-img-top" alt="Movie 1">
+          <div class="card-body">
+            <h5 class="card-title">Movie 1</h5>
+            <p class="card-text">This is the description for Movie 1. It is an amazing action-packed film.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="b">
+        <div class="card">
+          <img src="https://via.placeholder.com/400" class="card-img-top" alt="Movie 2">
+          <div class="card-body">
+            <h5 class="card-title">Movie 2</h5>
+            <p class="card-text">Movie 2 is a thriller that will keep you on the edge of your seat. Don't miss it!</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="c">
+        <div class="card">
+          <img src="https://via.placeholder.com/400" class="card-img-top" alt="Movie 3">
+          <div class="card-body">
+            <h5 class="card-title">Movie 3</h5>
+            <p class="card-text">This is a romantic drama that will pull at your heartstrings. A must-watch!</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="d">
+        <div class="card">
+          <img src="https://via.placeholder.com/400" class="card-img-top" alt="Movie 4">
+          <div class="card-body">
+            <h5 class="card-title">Movie 4</h5>
+            <p class="card-text">A deep science-fiction story that explores the unknown. Get ready for an adventure.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
